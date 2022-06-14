@@ -1,0 +1,205 @@
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1;
+}
+.header .header-left a {
+  text-decoration: none;
+  color: #000;
+}
+.header-right a {
+  text-decoration: none;
+  color: black;
+}
+.header-right {
+  display: flex;
+  justify-content: space-evenly;
+}
+.gourmet,
+.about,
+.menu,
+.contact,
+.header {
+  padding: 8px 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about,
+.menu,
+.contact,
+.burger div p,
+.about-catering,
+.gourmet,
+.our-menu,
+.margin10,
+.content3-contact {
+  letter-spacing: 4px;
+}
+.gourmet:hover,
+.about:hover,
+.menu:hover,
+.contact:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+.header button {
+  border: none;
+}
+
+/* burger */
+.burger {
+  position: relative;
+}
+.burger div {
+  position: absolute;
+  bottom: 0;
+  padding: 12px 24px;
+}
+.burger div p {
+  margin: 10px 0;
+  font-size: 33px;
+  color: gray;
+}
+
+/* About catering */
+.content-container {
+  padding: 64px 0;
+  display: flex;
+}
+.content-left,
+.content-right {
+  padding: 12px 24px;
+  width: 50%;
+}
+.content-left img,
+.content2-right img {
+  opacity: 0.75;
+}
+.about-catering,
+.tradition {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.about-catering {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+.tradition {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.first-pa,
+.second-pa {
+  margin: 18px 0;
+  font-size: 16px;
+}
+.first-pa span {
+  padding: 0 8px;
+  background: #f1f1f1;
+}
+.second-pa,
+.margin-bottom {
+  color: #757575;
+}
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+  height: 2px !important;
+}
+/* Our menu */
+.content2-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 0;
+}
+.content2-left.content2-right {
+  width: 50%;
+}
+.content2-left {
+  padding: 12px 24px;
+}
+.content2-right {
+  padding: 12px 24px;
+  width: 50%;
+}
+.our-menu {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.margin10 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+.margin-bottom {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  font-size: 13px;
+}
+.content3-container {
+  padding: 64px 16px;
+}
+.content3-contact {
+  margin-top: 10px;
+  margin-bottom: 55px;
+  font-weight: 450;
+}
+.content3-18px {
+  margin: 18px 0;
+  color: #607d8b;
+  font-size: 20px;
+}
+.content3-pa {
+  margin: 15px 0;
+  font-size: 13px;
+}
+.content3-container input {
+  padding: 16px 8px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.content3-container div {
+  display: flex;
+  flex-direction: column;
+}
+.content3-container button {
+  margin: 31px 0;
+  padding: 8px 16px;
+  border: none;
+  width: 15%;
+}
+.content3-container button:hover {
+  background: #ccc;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+  .header-right {
+    display: none;
+  }
+  .content-left {
+    display: none;
+  }
+  .content-right,
+  .content2-right {
+    width: 100%;
+  }
+  .content2-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content3-container button {
+    width: 25%;
+  }
+}
